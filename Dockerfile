@@ -1,4 +1,4 @@
-FROM multiarch/alpine:armhf-v3.8
+FROM multiarch/alpine:armhf-v3.9
 
 RUN \
    apk update && \
