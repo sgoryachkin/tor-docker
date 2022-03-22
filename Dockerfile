@@ -1,4 +1,4 @@
-FROM multiarch/alpine:armhf-v3.14
+FROM alpine
 
 RUN \
    apk update && \
