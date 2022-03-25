@@ -1,0 +1,14 @@
+templdir /etc/privoxy/templates
+
+listen-address  :8051
+
+# permit access from LOCAL
+permit-access 127.0.0.0/8
+
+# permit access from LAN
+#permit-access 10.168.0.0/16
+#permit-access 172.16.0.0/12
+permit-access 192.168.0.0/16
+
+# forward to TOR
+forward-socks5 / 127.0.0.1:9051 .

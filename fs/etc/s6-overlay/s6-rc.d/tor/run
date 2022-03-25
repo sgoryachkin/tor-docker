@@ -1,0 +1,4 @@
+#!/command/execlineb -P
+
+# Start daemon
+s6-setuidgid tor /usr/bin/tor
