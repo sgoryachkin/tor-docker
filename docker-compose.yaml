@@ -1,0 +1,25 @@
+version: "3.6"
+services:
+  tor:
+    image: sego/tor-docker
+    restart: always
+    ports:
+      - 9051:9051
+      - 8051:8051
+    volumes: 
+      - type: bind
+        source: ${TORRC_D_DIR}
+        target: /etc/torrc.d
+        read_only: true
+#  nginx:
+#    image: arm32v7/nginx:1.15
+#    volumes:
+#      - type: bind
+#        source: ./nginx.conf
+#        target: /etc/nginx/nginx.conf
+#        read_only: true
+#      - type: bind
+#        source: ${PROXY_PAC_DIR}
+#        target: /data/www
+#        read_only: true
+#    restart: always
