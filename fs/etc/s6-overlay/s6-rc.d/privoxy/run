@@ -1,4 +1,4 @@
 #!/command/execlineb -P
 
 # Start daemon
-s6-setuidgid privoxy /usr/sbin/privoxy /etc/privoxy/config2
+s6-setuidgid privoxy /usr/sbin/privoxy /etc/privoxy/config

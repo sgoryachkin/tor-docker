@@ -11,4 +11,5 @@ permit-access 127.0.0.0/8
 permit-access 192.168.0.0/16
 
 # forward to TOR
-forward-socks5 / 127.0.0.1:9051 .
+forward-socks5t / 		127.0.0.1:9051 	.
+forward         192.168.*.*/	.
