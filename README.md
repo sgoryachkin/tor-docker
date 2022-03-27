@@ -1,4 +1,8 @@
 # tor-docker
+## Overview
+Tor to provide socks5 tor proxy.
+Privoxy to provide forward from http proxy to tor socks5 proxy.
+[TODO] Lite Http server to provide acces to you proxy PAC file. 
 
 ## Build
 ```
